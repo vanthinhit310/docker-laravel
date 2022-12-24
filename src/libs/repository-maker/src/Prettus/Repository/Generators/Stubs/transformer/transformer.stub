@@ -1,0 +1,33 @@
+<?php
+
+$NAMESPACE$
+
+use League\Fractal\TransformerAbstract;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+/**
+ * Class $CLASS$Transformer.
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$Transformer extends JsonResource
+{
+    /**
+     * Transform the $CLASS$ entity.
+     *
+     * @param \$MODEL$ $model
+     *
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return [
+            'id'         => (int) $this->id,
+
+            /* place your other model properties here */
+
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at
+        ];
+    }
+}

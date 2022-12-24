@@ -1,0 +1,25 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use App\Http\Controllers\Controller;
+use Modules\$STUDLY_NAME$\Repositories\Interfaces\$STUDLY_NAME$Repository;
+
+class $CLASS$ extends Controller
+{
+
+     /**
+          * @var $STUDLY_NAME$Repository
+          */
+         protected $repository;
+
+         /**
+          * $STUDLY_NAME$Controller constructor.
+          *
+          * @param $STUDLY_NAME$Repository $repository
+          */
+         public function __construct($STUDLY_NAME$Repository $repository)
+         {
+             $this->repository = $repository;
+         }
+}
